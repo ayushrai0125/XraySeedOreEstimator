@@ -11,7 +11,7 @@ run `./gradlew build` in the home repository to get the .jar file in
 `/build/libs/`
 ## SeedMap ore searches
 
-Use `/xray on` and `/xray off` to show or hide the wireframes. These commands do not output player coordinates. Hiding wireframes does not clear the current search results; `/xray on` shows them again.
+Use `/xray on` and `/xray off` to show or hide the wireframes.
 
 The client command `/xray ore <type>` submits the hard-coded seed `-3048587972680030099`, Java 26.3, and your current block coordinates to the SeedMap Ore Finder. Supported types are `diamond`, `netherite`, `gold`, `iron`, `copper`, `redstone`, and `lapis`. Searches request up to 24 results from the site and print the results in chat. Results are estimates and may differ from the world. Each unmined returned coordinate is marked with a bright magenta, always-on-top wireframe until the next search or until you leave that world. Breaking one of those exact blocks removes its wireframe and adds its dimension and block coordinates to `config/xray_seedestimate-mined-ores.txt`; future searches continue to list blacklisted results in chat but never highlight them. Delete an entry from that file to allow its coordinate to be highlighted again. Existing `xray-temp-mined-ores.txt` and `xray-temp.properties` files are migrated to the new names automatically.
 
