@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "xray_seedestimate",
+	"version": "${version}",
+	"name": "Xray_SeedEstimate",
+	"description": "Estimates ore vein locations from a world seed and highlights predicted positions.",
+	"authors": [
+		"Xray_SeedEstimate"
+	],
+	"contact": {
+		"homepage": "https://www.seedmap.app/ore-finder/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/xray_seedestimate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.XraySeedEstimate"
+		],
+		"client": [
+			"com.example.client.XraySeedEstimateClient"
+		]
+	},
+	"mixins": [
+		"xray_seedestimate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
