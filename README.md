@@ -1,4 +1,6 @@
 # Xray_SeedEstimate
+## Version
+Currently tested with ONLY java 26.3
 
 ## Setup
 
